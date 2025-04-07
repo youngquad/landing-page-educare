@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Educare – Revolutionizing the UK University Experience</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(-30px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    h1, h2 {
+      color: #004080;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "✅ ";
+    }
+
+    .cta {
+      background: #e6f0ff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #004080;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #002d5c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #004080;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header, section, .cta {
+        padding: 1rem;
+      }
+
+      .cta a {
+        display: block;
+        margin: 0.75rem auto;
+      }
+    }
+
+    /* Animation trigger */
+    .visible {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <h1>🎓 Educare</h1>
+    <p>Revolutionizing the UK University Experience</p>
+  </header>
+
+  <section>
+    <h2>🌟 Why Educare?</h2>
+    <p>With over <strong>2.66 million students</strong> across <strong>150+ UK universities</strong>, Educare is here to transform student life with personalized support, mental health resources, and real-time feedback tools.</p>
+  </section>
+
+  <section>
+    <h2>💡 Our Vision</h2>
+    <ul>
+      <li>Tailored academic support</li>
+      <li>Seamless communication with staff & unions</li>
+      <li>Strong focus on student mental health</li>
+      <li>A dynamic, feedback-driven platform</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🧠 Mental Health Matters</h2>
+    <p>Students today face growing mental health challenges. Educare provides:</p>
+    <ul>
+      <li>Daily mood tracking</li>
+      <li>Guided meditations</li>
+      <li>Stress management tools</li>
+      <li>A well-being resource library</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🔁 Real-Time Feedback, Real Change</h2>
+    <p>We help universities improve teaching quality by collecting weekly feedback from students—turning insights into action.</p>
+  </section>
+
+  <section>
+    <h2>🛠 Comprehensive Features</h2>
+    <ul>
+      <li>Academic support & enrolment assistance</li>
+      <li>Fast-track student-faculty queries</li>
+      <li>Verified agent portal for trustworthy guidance</li>
+      <li>A marketplace connecting students and institutions</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🚀 Join the Movement</h2>
+    <p><strong>Phase 1:</strong> Development & Launch</p>
+    <p><strong>Phase 2:</strong> Scaling & Expansion with multilingual support</p>
+  </section>
+
+  <section class="cta">
+    <h2>💬 Get in Touch</h2>
+    <p>Ready to enhance your university's student experience? Or are you a student who wants to see Educare at your uni?</p>
+    <a href="#contact">Contact Us</a>
+    <a href="#demo">Book a Demo</a>
+    <a href="#waitlist">Join the Waitlist</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Educare. All rights reserved.
+  </footer>
+
+  <script>
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('header, section').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
